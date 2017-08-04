@@ -1,6 +1,12 @@
 package com.example.petstore.api
 
+import org.springframework.data.annotation.Id
+
 data class Pet(
-        val id: Long,
         val name: String
-)
+) {
+    constructor() : this("")
+
+    @Id
+    val id: String? = null
+}
