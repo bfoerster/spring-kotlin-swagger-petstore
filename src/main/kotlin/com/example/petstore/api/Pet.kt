@@ -10,4 +10,5 @@ data class Pet(
     @Id
     val id: String? = null
     val category: Category? = null
+    val status: String? = null
 }
